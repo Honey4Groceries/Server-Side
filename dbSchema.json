@@ -43,7 +43,7 @@
         "priceID": {
             "product": "productID",
             "is sale": false,
-            "sale condition": null
+            "sale condition": null,
             "time": "2012-04-23T18:25:43.511Z",
             "store": "storeID"
         }
