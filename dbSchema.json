@@ -17,24 +17,45 @@
     "stores": {
         "venueID": {
             "name": "somename",
-            "location": {"0.0": "0.0"},
+            "location": {
+                "lat": 0.0,
+                "lng": 0.0
+            },
             "hours": {
-                "Monday": {"0900": "2100"},
-                "Tuesday": {"0900": "2100"},
-                "Wednesday": {"0900": "2100"},
-                "Thursday": {"0900": "2100"},
-                "Friday": {"0900": "2100"},
-                "Saturday": {"0900": "2400"},
-                "Sunday": {"0800": "2300"}
+                "monday": {
+                    "open": "0900",
+                    "closed": "2100"
+                },
+                "tuesday": {
+                    "open": "0900",
+                    "closed": "2100"
+                },
+                "wednesday": {
+                    "open": "0900",
+                    "closed": "2100"
+                },
+                "thursday": {
+                    "open": "0900",
+                    "closed": "2100"
+                },
+                "friday": {
+                    "open": "0900",
+                    "closed": "2100"
+                },
+                "saturday": {
+                    "open": "0900",
+                    "closed": "2100"
+                },
+                "sunday": {
+                    "open": "0900",
+                    "closed": "2100"
+                }
             },
             "products": {
-                "productID": null,
-                "productID": null,
-                "productID": null
+                "product_id1": null
             },
             "categories": {
-                "catID": "price",
-                "catID": "price"
+                "catID": 0.0
             }
         }
     },
