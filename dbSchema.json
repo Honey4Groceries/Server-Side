@@ -2,10 +2,10 @@
     "categories": {
         "catID": {
             "name": "somename",
-            "sub-categories": [
-                "catId",
-                "catId"
-            ],
+            "sub-categories": {
+                "catId": null,
+                "catId: null"
+            },
             "store to price": {
                 "storeID": "priceID",
                 "storeID": "priceID"
@@ -17,21 +17,21 @@
     "stores": {
         "venueID": {
             "name": "somename",
-            "location": [0.0, 0.0],
+            "location": {0.0: 0.0},
             "hours": {
-                "Monday": ["0900", "2100"],
-                "Tuesday": ["0900", "2100"],
-                "Wednesday": ["0900", "2100"],
-                "Thursday": ["0900", "2100"],
-                "Friday": ["0900", "2100"],
-                "Saturday": ["0900", "2400"],
-                "Sunday": ["0800", "2300"]
+                "Monday": {"0900": "2100"},
+                "Tuesday": {"0900": "2100"},
+                "Wednesday": {"0900": "2100"},
+                "Thursday": {"0900": "2100"},
+                "Friday": {"0900": "2100"},
+                "Saturday": {"0900": "2400"},
+                "Sunday": {"0800": "2300"}
             },
-            "products": [
-                "productID",
-                "productID",
-                "productID"
-            ],
+            "products": {
+                "productID": null,
+                "productID": null,
+                "productID": null
+            },
             "categories": {
                 "catID": "price",
                 "catID": "price"
@@ -55,11 +55,11 @@
                 "storeID": "priceID",
                 "storeID": "priceID"
             },
-            "categories": [
-                "categoryID",
-                "categoryID",
-                "categoryID"
-            ],
+            "categories": {
+                "categoryID": null,
+                "categoryID": null,
+                "categoryID": null
+            },
             "name": "some name",
             "price per": "$23.00/lb",
             "UPC/SKUn": "????????????"
