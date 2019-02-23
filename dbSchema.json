@@ -24,31 +24,31 @@
             "hours": {
                 "monday": {
                     "open": "0900",
-                    "closed": "2100"
+                    "close": "2100"
                 },
                 "tuesday": {
                     "open": "0900",
-                    "closed": "2100"
+                    "close": "2100"
                 },
                 "wednesday": {
                     "open": "0900",
-                    "closed": "2100"
+                    "close": "2100"
                 },
                 "thursday": {
                     "open": "0900",
-                    "closed": "2100"
+                    "close": "2100"
                 },
                 "friday": {
                     "open": "0900",
-                    "closed": "2100"
+                    "close": "2100"
                 },
                 "saturday": {
                     "open": "0900",
-                    "closed": "2100"
+                    "close": "2100"
                 },
                 "sunday": {
                     "open": "0900",
-                    "closed": "2100"
+                    "close": "2100"
                 }
             },
             "products": {
