@@ -17,7 +17,7 @@
     "stores": {
         "venueID": {
             "name": "somename",
-            "location": {0.0: 0.0},
+            "location": {"0.0": "0.0"},
             "hours": {
                 "Monday": {"0900": "2100"},
                 "Tuesday": {"0900": "2100"},
