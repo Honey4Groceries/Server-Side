@@ -15,38 +15,38 @@
     },
 
     "stores": {
-        "venueID": {
+        "venueID1": {
             "name": "somename",
             "location": {
                 "lat": 0.0,
                 "lng": 0.0
             },
             "hours": {
-                "monday": {
+                "1": {
                     "open": "0900",
                     "close": "2100"
                 },
-                "tuesday": {
+                "2": {
                     "open": "0900",
                     "close": "2100"
                 },
-                "wednesday": {
+                "3": {
                     "open": "0900",
                     "close": "2100"
                 },
-                "thursday": {
+                "4": {
                     "open": "0900",
                     "close": "2100"
                 },
-                "friday": {
+                "5": {
                     "open": "0900",
                     "close": "2100"
                 },
-                "saturday": {
+                "6": {
                     "open": "0900",
                     "close": "2100"
                 },
-                "sunday": {
+                "7": {
                     "open": "0900",
                     "close": "2100"
                 }
@@ -55,7 +55,7 @@
                 "product_id1": null
             },
             "categories": {
-                "catID": 0.0
+                "catID1": 0.0
             }
         }
     },
