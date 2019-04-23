@@ -1,6 +1,5 @@
 import requests
 import json
-from firebase import firebase
 
 responses = []
 names = []
@@ -8,7 +7,6 @@ venueIDs = []
 locations = []
 hours = []
 
-firebase = firebase.FirebaseApplication('https://honey4groceries.firebaseio.com')
 
 def searchStore(name):
   URL = "https://api.foursquare.com/v2/venues/search?client_id=4TCOBRNYJSHUVUA21XNC1NGYF1EFSMKSSCPTLPHXE1KITWME&client_secret=M4JZCLSXBFPDKS0G52OYPI1J13KIYDIYKLS5J0ASRCDKDVTE&near=La%20Jolla%2C%20CA&categoryId=4bf58dd8d48988d118951735&v=20180101&fbclid=IwAR0Q7Xexj1M-x9TL2B5_ne0z21DRYh1YgT0L-Ka12fj9lherx1TlcTS7YBs"
@@ -102,7 +100,7 @@ def parseAll():
       allParsed.append(STORE_DICT)
 #print(json.dumps(allParsed, indent=4))
       
-      print(json.dumps(allParsed, indent=4))
+#print(json.dumps(allParsed, indent=4))
 
 
 
@@ -113,5 +111,6 @@ getLocation(responses[0])
 
 #yay we finally donezo :)
 parseAll()
-r = firebase.post('/stores', data=allParsed[0])
+print(allParsed[0])
+r = requests.post(url = "https://honey4groceries.firebaseio.com/stores.json", data=json.dumps(allParsed[0]).replace("\'", "\"")).json()
 print(r)
