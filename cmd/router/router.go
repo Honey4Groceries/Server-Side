@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
     "encoding/json"
 	"github.com/gorilla/mux"
@@ -13,8 +12,7 @@ func getCategoryPricesForStores(w http.ResponseWriter, r *http.Request) {
     params := mux.Vars(r)   // Used to get category_id from endpoint URL
 
     // Query Firebase for category_id given
-    resp, err := http.Get("https://honey4groceries.firebaseio.com/categories/"
-                            + params["category_id"] + "/storeToPrice.json")
+    resp, err := http.Get("https://honey4groceries.firebaseio.com/categories/" + params["category_id"] + "/storeToPrice.json")
 
     // Parse the JSON Response
     var storesToPrices map[string]interface{}
@@ -53,8 +51,7 @@ func getCategoryPricesForStores(w http.ResponseWriter, r *http.Request) {
         defer resp.Body.Close()
 
         // Query Firebase for Price
-        resp, err := http.Get("https://honey4groceries.firebaseio.com/prices/" +
-    storesToPrices[v] + "/price.json")
+        resp, err = http.Get("https://honey4groceries.firebaseio.com/prices/" + storesToPrices[v] + "/price.json")
 
         // Get Price from JSON Response
         var price Price
@@ -85,13 +82,11 @@ func main() {
 	r := mux.NewRouter()
 
     // Subrouter for the categories/category_id/prices Endpoint
-    categoryPrices := r.PathPrefix("/categories/{category_id}/prices")
-                       .Subrouter()
+    categoryPrices := r.PathPrefix("/categories/{category_id}/prices").Subrouter()
 
     // Route Handlers for the categories/category_id/prices Endpoint
     categoryPrices.Handler(getCategoryPricesForStores).Methods("GET")
-    categoryPrices.Handler(getCategoryPricesForStore).Methods("GET")
-        .Queries("store", "{store_id}")
+    categoryPrices.Handler(getCategoryPricesForStore).Methods("GET").Queries("store", "{store_id}")
 
 
     // Subrouter for the items/item_id/prices Endpoint
