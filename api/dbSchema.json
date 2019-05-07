@@ -4,7 +4,7 @@
             "name": "somename",
             "sub-categories": {
                 "catId": null,
-                "catId: null"
+                "catId": null
             },
             "store to price": {
                 "storeID": "priceID",
