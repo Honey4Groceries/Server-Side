@@ -4,7 +4,7 @@
             "name": "somename",
             "sub-categories": {
                 "catId": null,
-                "catId: null"
+                "catId": null
             },
             "store to price": {
                 "storeID": "priceID",
@@ -83,7 +83,7 @@
             },
             "name": "some name",
             "price per": "$23.00/lb",
-            "UPC/SKUn": "????????????"
+            "UPC_SKUn": "????????????"
         }
     }
 }
