@@ -8,6 +8,16 @@ import (
     "log"
 )
 
+// Struct to Unmarshal Store Name
+type StoreName struct {
+    Name string
+}
+
+// Struct to Unmarshal Price
+type Price struct {
+    Price string
+}
+
 // Get Category Prices for Multiple Stores
 func getCategoryPricesForStores(w http.ResponseWriter, r *http.Request) {
     stores := r.URL.Query() // Store list of stores to consider into a var
@@ -29,15 +39,6 @@ func getCategoryPricesForStores(w http.ResponseWriter, r *http.Request) {
     var storePrices map[string]string
     storePrices = make(map[string]string)
 
-    // Struct to Unmarshal Store Name
-    type StoreName struct {
-        Name string
-     }
-
-     // Struct to Unmarshal Price
-     type Price struct {
-        Price string
-     }
 
     // Loop through store_ids from Foursquare
     for _, store_id := range stores["stores"] {
